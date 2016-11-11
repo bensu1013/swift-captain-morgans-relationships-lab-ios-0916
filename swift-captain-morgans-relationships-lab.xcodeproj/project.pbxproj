@@ -11,6 +11,11 @@
 		4C45CA8F1D3A9A7F0030A41D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C45CA8D1D3A9A7F0030A41D /* Main.storyboard */; };
 		4C45CA941D3A9A7F0030A41D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C45CA931D3A9A7F0030A41D /* Assets.xcassets */; };
 		4C45CA971D3A9A7F0030A41D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C45CA951D3A9A7F0030A41D /* LaunchScreen.storyboard */; };
+		B547CDD01DD614A300C303A7 /* PirateModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B547CDCE1DD614A300C303A7 /* PirateModel.xcdatamodeld */; };
+		B547CDD21DD6158C00C303A7 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B547CDD11DD6158C00C303A7 /* DataStore.swift */; };
+		B547CDD41DD64EE700C303A7 /* PiratesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B547CDD31DD64EE700C303A7 /* PiratesTableViewController.swift */; };
+		B547CDD61DD64EF200C303A7 /* ShipsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B547CDD51DD64EF200C303A7 /* ShipsTableViewController.swift */; };
+		B547CDD81DD64F0500C303A7 /* ShipDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B547CDD71DD64F0500C303A7 /* ShipDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		4C45CA931D3A9A7F0030A41D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C45CA961D3A9A7F0030A41D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C45CA981D3A9A7F0030A41D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B547CDCF1DD614A300C303A7 /* PirateModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PirateModel.xcdatamodel; sourceTree = "<group>"; };
+		B547CDD11DD6158C00C303A7 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataStore.swift; path = ../DataStore.swift; sourceTree = "<group>"; };
+		B547CDD31DD64EE700C303A7 /* PiratesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PiratesTableViewController.swift; sourceTree = "<group>"; };
+		B547CDD51DD64EF200C303A7 /* ShipsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShipsTableViewController.swift; sourceTree = "<group>"; };
+		B547CDD71DD64F0500C303A7 /* ShipDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShipDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +56,7 @@
 		4C45CA7D1D3A9A7F0030A41D = {
 			isa = PBXGroup;
 			children = (
+				B547CDCE1DD614A300C303A7 /* PirateModel.xcdatamodeld */,
 				4C45CA881D3A9A7F0030A41D /* swift-captain-morgans-relationships-lab */,
 				4C45CA871D3A9A7F0030A41D /* Products */,
 			);
@@ -62,8 +73,12 @@
 		4C45CA881D3A9A7F0030A41D /* swift-captain-morgans-relationships-lab */ = {
 			isa = PBXGroup;
 			children = (
+				B547CDD11DD6158C00C303A7 /* DataStore.swift */,
 				4C45CA891D3A9A7F0030A41D /* AppDelegate.swift */,
 				4C45CA8D1D3A9A7F0030A41D /* Main.storyboard */,
+				B547CDD71DD64F0500C303A7 /* ShipDetailViewController.swift */,
+				B547CDD51DD64EF200C303A7 /* ShipsTableViewController.swift */,
+				B547CDD31DD64EE700C303A7 /* PiratesTableViewController.swift */,
 				1B885D9D1D3FE64B0029DFFC /* Resources */,
 			);
 			path = "swift-captain-morgans-relationships-lab";
@@ -146,6 +161,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B547CDD41DD64EE700C303A7 /* PiratesTableViewController.swift in Sources */,
+				B547CDD61DD64EF200C303A7 /* ShipsTableViewController.swift in Sources */,
+				B547CDD01DD614A300C303A7 /* PirateModel.xcdatamodeld in Sources */,
+				B547CDD81DD64F0500C303A7 /* ShipDetailViewController.swift in Sources */,
+				B547CDD21DD6158C00C303A7 /* DataStore.swift in Sources */,
 				4C45CA8A1D3A9A7F0030A41D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,7 +229,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -249,7 +269,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -303,6 +323,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B547CDCE1DD614A300C303A7 /* PirateModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B547CDCF1DD614A300C303A7 /* PirateModel.xcdatamodel */,
+			);
+			currentVersion = B547CDCF1DD614A300C303A7 /* PirateModel.xcdatamodel */;
+			path = PirateModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4C45CA7E1D3A9A7F0030A41D /* Project object */;
 }
